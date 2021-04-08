@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>RUMAISHA BASHAR CHECK WHATSAPP HEH</h2>
+    <h3 id="username">Name</h3>
+    <ul id></ul>
+    <script>
+        fetch('https://randomuser.me/api')
+        .then (res=>res.json())
+        .then(data=>{
+         
+            
+          const user= data.results[0];
+          console.log(user);
+          const userName=user.name;
+        //   console.log(userName);
+         
+        
+         const fullName=`title: ${userName.title} ${userName.first} ${userName.last} done by rumaisha`
+
+            // console.log(fullName);
+          const get= document.getElementById('username').innerText=fullName;
+          
+        })
+    </script>
+</body>
+</html>
